@@ -15,7 +15,7 @@
     <p>Técnica alternativa en javascript para poder validar formularios en HTML.</p>
 
     <section>
-      <form id="elForm" action="/procesar-formulario.php" method="post" autocomplete="off">
+      <form id="elForm" action="/procesar-formulario.php" method="post" autocomplete="off" novalidate>
         <div class="form-seccion">
           <label for="campoNombre">Nombre</label>
           <input id="campoNombre" type="text" name="nombre" minlength="5" maxlength="35" required>
@@ -41,5 +41,6 @@
       Se recomienda abrir la <code>consola</code> para ver los
       mensajes que el <i>script</i> genera.
     </aside>
+    <script src="/js/formulario.js"></script>
   </body>
 </html>

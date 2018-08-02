@@ -83,7 +83,7 @@ section form .form-seccion button[type=submit] {
 }
 
 section form .form-seccion.area-boton-submit {
-  margin-top: 3em;
+  margin-top: 3em
 }
 
 section form .form-seccion button[type=submit]:hover {
@@ -91,12 +91,25 @@ section form .form-seccion button[type=submit]:hover {
   cursor: pointer;
 }
 
+section form .form-seccion button[type=submit]:focus {
+  outline: none;
+}
+
+section form .form-seccion button[type=submit]:disabled {
+  background: gray;
+}
+
 /* estilos para formulario inválido */
-section form.formulario-invalido .form-seccion p.msg-invalido {
+section form .form-seccion p.msg-invalido {
+  display: none;
+}
+section form.formulario-invalido .form-seccion input:invalid + p.msg-invalido,
+section form.formulario-invalido .form-seccion textarea:invalid + p.msg-invalido {
   color: red;
   margin: .5em 0 0 0;
+  display: block;
 }
-section form.formulario-invalido .form-seccion input[type=text]:invalid,
+section form.formulario-invalido .form-seccion input:invalid,
 section form.formulario-invalido .form-seccion textarea:invalid {
   border-color: red;
 }
