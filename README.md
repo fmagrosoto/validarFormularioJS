@@ -1,5 +1,8 @@
 # VALIDAR FORMULARIO CON JAVASCRIPT
 
+![Packagist](https://img.shields.io/badge/HTML-5-yellowgreen.svg)
+[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](LICENSE)
+
 Técnica alternativa en javascript para poder validar formularios en HTML.
 
 Este es un ejemplo que usa [formPHP](https://github.com/fmagrosoto/formPHP), un
