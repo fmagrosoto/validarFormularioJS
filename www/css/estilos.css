@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2em;
+  background: whitesmoke;
+  font-family: 'Sunflower', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  margin: 0;
+  position: relative;
+  padding-bottom: .25em;
+}
+
+h1:before {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 0;
+  border-bottom: 1px solid black;
+  bottom: 0;
+  left: 0;
+}
+
+/* ESTILOS DEL FORMULARIO */
+/* Estilos importantes para la notificación visual */
+/* a la hora de validar el formulario. */
+section {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 400px;
+  border: 1px solid lightgray;
+  background: white;
+  padding: 1em;
+}
+
+section form .form-seccion {
+  margin-bottom: 1em;
+}
+
+section form .form-seccion:last-child {
+  margin-bottom: 0;
+}
+
+section form .form-seccion label {
+  display: block;
+  margin-bottom: .5em;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+section form .form-seccion input,
+section form .form-seccion textarea {
+  display: block;
+  width: 100%;
+  border: 1px lightgray solid;
+  padding: .5em;
+}
+
+section form .form-seccion textarea {
+  resize: none;
+  height: 5em;
+}
+
+section form .form-seccion input:focus,
+section form .form-seccion textarea:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+section form .form-seccion button[type=submit] {
+  width: 100%;
+  display: block;
+  background: rgb(50,50,100);
+  color: white;
+  border: none;
+  padding: .75em;
+  border-radius: .5em;
+  font-size: 20px;
+}
+
+section form .form-seccion.area-boton-submit {
+  margin-top: 3em;
+}
+
+section form .form-seccion button[type=submit]:hover {
+  background: rgb(50,50,75);
+  cursor: pointer;
+}
+
+/* estilos para formulario inválido */
+section form.formulario-invalido .form-seccion p.msg-invalido {
+  color: red;
+  margin: .5em 0 0 0;
+}
+section form.formulario-invalido .form-seccion input[type=text]:invalid,
+section form.formulario-invalido .form-seccion textarea:invalid {
+  border-color: red;
+}
+
+/* FIN DE ESTILOS DEL FORMULARIO */
+
+aside.aviso {
+  background: rgba(150,100,0,.1);
+  padding: 1em;
+  border: 1px solid rgba(150, 100, 0, .25);
+  font-size: 110%;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <title>Demo para validar formulario en Javascript</title>
+    <meta name="author" content="Fernando Magrosoto">
+    <meta name="description" content="Demo para validar formulario en Javascript">
+    <meta name="keywords" content="magrosoto, javascript, github, demo, tutorial">
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+  </head>
+  <body>
+    <h1>Validar formulario con Javascript</h1>
+    <p>Técnica alternativa en javascript para poder validar formularios en HTML.</p>
+
+    <section>
+      <form id="elForm" action="/procesar-formulario.php" method="post" autocomplete="off">
+        <div class="form-seccion">
+          <label for="campoNombre">Nombre</label>
+          <input id="campoNombre" type="text" name="nombre" minlength="5" maxlength="35" required>
+          <p class="msg-invalido">No seas tímido, dinos cómo te llamas.</p>
+        </div>
+        <div class="form-seccion">
+          <label for="campoCorreo">Correo</label>
+          <input id="campoCorreo" type="email" name="correo" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
+          <p class="msg-invalido">Queremos contactarte vía Gmail.</p>
+        </div>
+        <div class="form-seccion">
+          <label for="campoComentarios">Comentarios</label>
+          <textarea id="campoComentarios" name="comentarios" minlength="5" maxlength="255" required></textarea>
+          <p class="msg-invalido">Tus comentarios son necesarios, platícanos de ti.</p>
+        </div>
+        <div class="form-seccion area-boton-submit">
+          <button id="elFormSubmit" type="submit">Validar formulario</button>
+        </div>
+      </form>
+    </section>
+
+    <aside class="aviso">
+      Se recomienda abrir la <code>consola</code> para ver los
+      mensajes que el <i>script</i> genera.
+    </aside>
+  </body>
+</html>
